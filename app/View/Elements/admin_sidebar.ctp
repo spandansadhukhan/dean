@@ -136,10 +136,13 @@
                 <a href="#"><i class="fa fa-female sidebar-nav-icon"></i> Faq</a>
                 <ul class="sub-menu-list">
                     <li class="">
-                        <a href="<?php echo $this->webroot.'admin/faqs/add';?>">Add Faq</a>
+                    <a href="<?php echo $this->webroot.'admin/faqs/faqcategorylist';?>">Manage Faq Category</a>
                     </li>
+<!--                    <li class="">
+                        <a href="<?php echo $this->webroot.'admin/faqs/add';?>">Add Faq</a>
+                    </li>-->
                     <li class="">
-                        <a href="<?php echo $this->webroot.'admin/faqs/index';?>">List Faq</a>
+                        <a href="<?php echo $this->webroot.'admin/faqs/index';?>">All Faqs</a>
                     </li>
                     
                 </ul>
@@ -183,7 +186,7 @@
                 </ul>
             </li>
             <li class="menu-list">
-                <a href="#"><i class="fa fa-female sidebar-nav-icon"></i> Classified</a>
+                <a href="#"><i class="fa fa-female sidebar-nav-icon"></i> Classifieds</a>
                 <ul class="sub-menu-list">
                     <li class="">
                        <a href="<?php echo $this->webroot.'admin/classified_categories/';?>">Manage Classified Category</a>
@@ -242,7 +245,7 @@
                 <a href="#"><i class="fa fa-female sidebar-nav-icon"></i> Blacklist</a>
                 <ul class="sub-menu-list">
                     <li class="">
-                        <a href="<?php echo $this->webroot.'admin/escorts/blacklist';?>">All Blacklist</a>
+                        <a href="<?php echo $this->webroot.'admin/escorts/blacklist';?>">Blacklist Customers</a>
                     </li>
                   
                 </ul>

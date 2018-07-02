@@ -30,4 +30,13 @@ class Faq extends AppModel {
 		     
     );
     
+     public $belongsTo = array(
+		'FaqCategory' => array(
+			'className' => 'FaqCategory',
+			'foreignKey' => 'type',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		));
+    
 }

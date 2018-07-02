@@ -76,7 +76,7 @@ $sl_no=0;
 				</div>
 				</div>
 				<div class="btn-group btn-group-sm pull-right">
-					<a id="style-hover" class="btn btn-primary gap_up gap_up_down" title="" data-toggle="tooltip" href="<?php echo $this->webroot; ?>admin/classified_categories/add" data-original-title="Add New Category">Add New</a>
+					<a id="style-hover" class="btn btn-primary gap_up gap_up_down" title="" data-toggle="tooltip" href="<?php echo $this->webroot; ?>admin/classifieds/add" data-original-title="Add New Classified">Add New</a>
 				</div>
 		</div>
          <?php echo $this->Form->end();?>

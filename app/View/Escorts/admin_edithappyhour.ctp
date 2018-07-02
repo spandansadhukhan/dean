@@ -15,6 +15,14 @@
 
                                     echo $this->Form->input('id');
                                 ?>
+                                
+                                <div class="form-group ">
+                                        <label for="name" class="control-label col-lg-2">Escort Name <span style="color:red;">*</span></label>
+                                        <div class="col-lg-10">
+                                            
+					<?php echo $this->Form->input('escort_id',array("options"=>$escort,'label'=>false,'required'=>'required','class'=>'form-control','empty'=>'Select Escort')); ?>
+                                        </div>
+                                    </div>
 
                                     <div class="form-group ">
                                         <label for="name" class="control-label col-lg-2">Service Type <span style="color:red;">*</span></label>

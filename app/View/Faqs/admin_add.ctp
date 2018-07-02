@@ -15,7 +15,7 @@
                                     <div class="form-group ">
 					<label class="col-sm-2"><strong>Type of Faq</strong></label>
                                         <div class="col-sm-12">
-				            <?php echo $this->Form->input('type',array('label'=>false,"options"=>$types,'class'=>'form-control','required'=>true)); ?>
+				            <?php echo $this->Form->input('type',array('label'=>false,"options"=>$category,'class'=>'form-control','required'=>true)); ?>
                                         </div>
                                     </div>
 				    <div class="form-group ">

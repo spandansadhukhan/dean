@@ -1,11 +1,8 @@
-
-
-
- <?php
+<?php
 //pr($users); exit;
 echo $this->Html->script('chosen.jquery', array('inline' => true));
 echo $this->Html->css('bootstrap-chosen', array('inline' => true)); 
-
+$sl_no=0;
 ?>
   <div class="wrapper">
       
@@ -20,7 +17,7 @@ echo $this->Html->css('bootstrap-chosen', array('inline' => true));
                     </div>
                     <h3 class="widget-content text-right animation-pullDown">
                         <strong>Total</strong><br>
-                        <small><?php echo $total_blog;?></small>
+                        <small><?php echo $total_category;?></small>
                     </h3>
                 </div>
             </a>
@@ -33,7 +30,7 @@ echo $this->Html->css('bootstrap-chosen', array('inline' => true));
                     </div>
                     <h3 class="widget-content text-right text-success animation-pullDown">
                         <strong>Active</strong><br>
-                        <small><?php echo $total_active_blog;?></small>
+                        <small><?php echo $total_active_category;?></small>
                     </h3>
                 </div>
             </a>
@@ -46,7 +43,7 @@ echo $this->Html->css('bootstrap-chosen', array('inline' => true));
                     </div>
                     <h3 class="widget-content text-right text-warning animation-pullDown">
                         <strong>Inactive</strong><br>
-                        <small><?php echo $total_inactive_blog;?></small>
+                        <small><?php echo $total_inactive_category;?></small>
                     </h3>
                 </div>
             </a>
@@ -54,17 +51,7 @@ echo $this->Html->css('bootstrap-chosen', array('inline' => true));
 
     </div>
       
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
+    
       
       
     <div class="row gap_row">
@@ -72,30 +59,30 @@ echo $this->Html->css('bootstrap-chosen', array('inline' => true));
           
         <section class="panel">
         <header class="panel-heading">
-            Blogs (Total Records: <?php echo $total_blog;?>)
+            Categories (Total Records: <?php echo $total_category;?>)
         </header>
            <?php echo $this->Form->create("Filter",array('class' => 'filter'));?>
            <?php echo $this->Form->input("advace_search_type",array('type'=>'hidden','value'=>0))?>
             <div class="table-options clearfix" style=" background-color:#fff">
-                <div class="clearfix pull-left" style="display:<?php if(isset($this->request->data['Filter']['advace_search_type']) and $this->request->data['Filter']['advace_search_type']==1){?>none; <?php }else{ ?>block;<?php } ?>" id="filterInput">
-                &nbsp;<button title="" class="btn btn-alt btn-primary gap_up enable-tooltip" id="advanceSearch" type="button" data-original-title="Advance Search"><i class="fa fa-sun-o fa-lg"></i></button>
-                <div class="btn-group btn-group-sm pull-left">
-                        <div class="input-group">
-                                                     <?php echo $this->Form->input("name",array('class'=>'form-control col-md-6','placeholder'=>'Search by Title..','label'=>false))?>
-                                <span class="input-group-btn">
-                                <button class="btn btn-primary" type="submit" name="search_single">Search</button>
-                            </span>
-                        </div>
-                </div>
-                </div>
-                <div class="btn-group btn-group-sm pull-right">
-                    <a id="style-hover" class="btn btn-primary gap_up gap_up_down" title="" data-toggle="tooltip" href="<?php echo $this->webroot;?>admin/blogs/addblog" data-original-title="Add New Agency">Add New</a>
-                </div>
-        </div>
+				<div class="clearfix pull-left" style="display:<?php if(isset($this->request->data['Filter']['advace_search_type']) and $this->request->data['Filter']['advace_search_type']==1){?>none; <?php }else{ ?>block;<?php } ?>" id="filterInput">
+				&nbsp;<button title="" class="btn btn-alt btn-primary gap_up enable-tooltip" id="advanceSearch" type="button" data-original-title="Advance Search"><i class="fa fa-sun-o fa-lg"></i></button>
+				<div class="btn-group btn-group-sm pull-left">
+						<div class="input-group">
+                                                     <?php echo $this->Form->input("name",array('class'=>'form-control col-md-6','placeholder'=>'Search by display name..','label'=>false))?>
+								<span class="input-group-btn">
+								<button class="btn btn-primary" type="submit" name="search_single">Search</button>
+							</span>
+						</div>
+				</div>
+				</div>
+				<div class="btn-group btn-group-sm pull-right">
+					<a id="style-hover" class="btn btn-primary gap_up gap_up_down" title="" data-toggle="tooltip" href="<?php echo $this->webroot; ?>admin/faqs/addcat" data-original-title="Add New Category">Add New</a>
+				</div>
+		</div>
          <?php echo $this->Form->end();?>
   
        <div style=" clear:both;"></div>     
-       <?php echo $this->Form->create("Filter",array('class' => 'filter'));?>
+      <?php echo $this->Form->create("Filter",array('class' => 'filter'));?>
       <?php echo $this->Form->input("advace_search_type",array('type'=>'hidden','value'=>1))?>
 
        <div style="display:<?php if(isset($this->request->data['Filter']['advace_search_type'])and $this->request->data['Filter']['advace_search_type']==1){?>block; <?php }else{ ?>none;<?php } ?>" class="col-md-12" id="adv_box">
@@ -138,8 +125,8 @@ echo $this->Html->css('bootstrap-chosen', array('inline' => true));
                                 </div>
                                
                             </div>
-                        </div>
-                </div>     
+						</div>
+				</div>     
          <?php echo $this->Form->end();?>    
        
             
@@ -148,93 +135,65 @@ echo $this->Html->css('bootstrap-chosen', array('inline' => true));
             
         <table  class="display table table-bordered table-striped">
         <thead>
-    <tr>
-                                <th><?php echo $this->Paginator->sort('id'); ?></th>
-                                <th><?php echo 'Posted By'; ?></th>
-                                 <th><?php echo 'Image'; ?></th>
-                                
-                                <th><?php echo 'Title'; ?></th>
-                                 <th><?php echo 'Comments'; ?></th>
-                                  <th><?php echo 'Add Date'; ?></th>
-                                <th><?php echo 'Actions'; ?></th>
+	<tr>
+               
+		<th><?php echo $this->Paginator->sort('id'); ?></th>
+                <th><?php echo $this->Paginator->sort('name'); ?></th>
+                <th><?php echo $this->Paginator->sort('status'); ?></th>
+                <th><?php echo $this->Paginator->sort('Add Date'); ?></th>
+                <th class="actions"><?php echo __('Actions'); ?></th>
 
-                            </tr>
+	</tr>
         </thead>
         <tbody>
-    <?php foreach ($blogs as $blog):
-        ++$sl_no;
-        ?>
-    <tr class="gradeX">
-                                <td><?php echo $sl_no; ?>&nbsp;</td>
-                                <td><?php echo $blog["User"]["name"]; ?>&nbsp;</td>
-                              <td>
-      <?php
-      if($blog['Blog']['image']!='')
-      {
-      ?>
-      <img src="<?php echo $this->webroot;?>blog_images/<?php echo $blog['Blog']['image']; ?>" style="height:100px;width:100px;">&nbsp;
-      <?php
-      }
-      else
-      {  
-      ?>
-      <img src="<?php echo $this->webroot;?>images/no_image.jpeg" style="height:100px;width:100px;">&nbsp;
-      <?php
-      }
-      ?>
-    </td>
-                                
-                                <td><?php echo $blog['Blog']['name']; ?>&nbsp;</td>
-                              <!--  <td>
-
-                                    <a href="javascript:void(0)" onclick="view(<?php echo $blog['Blog']['id']; ?>)">View</a>
-                                    <a href="<?php echo $this->webroot;?>admin/blogs/delete/<?php echo $blog['Blog']['id']; ?>"  
-                                       onclick="return confirm('Are you want to remove this?')">Delete</a>
-                                  <?php if($blog['Blog']['admin_approve']==1)
-                                  {
-                                  echo $this->Html->link(__('Deactive'), array('action' => 'activeblog', $blog['Blog']['id'],0));
-                                  }
-                                  else {
-                                  echo $this->Html->link(__('Active'), array('action' => 'activeblog', $blog['Blog']['id'],1));
-                                  }
-                                ?>
-                                </td> -->
-                                  <td><?php echo '0'; ?>&nbsp;</td>
-                                  <td><?php echo date('d-M-Y',strtotime($blog['Blog']['post_date'])); ?>&nbsp;</td>
-                                <td class="text-center">
+	<?php foreach ($classcategories as $category): ?>
+            
+	<tr class="gradeX">
+                
+		<td><?php echo h(++$sl_no); ?>&nbsp;</td>
+                <td><?php echo h($category['FaqCategory']['name']); ?>&nbsp;</td>
+                <td><?php if($category['FaqCategory']['status']==1) {echo 'Active';} else { echo 'Inactive';} ?>&nbsp;</td>
+                <td><?php echo date('Y-m-d',strtotime($category['FaqCategory']['add_date']));?>&nbsp;</td>
+                <td class="text-center">
                                     <div class="btn-group btn-group-sm">  
 
-                                        <a href="javascript:void(0);" onclick="view(<?php echo $blog['Blog']['id']; ?>)" class="btn btn-default enable-tooltip view-record" data-original-title="View Record"><i class="fa fa-search"></i></a>
 
-                                        <a href="<?php echo $this->webroot;?>admin/blogs/delete/<?php echo $blog['Blog']['id']; ?>"  
-                                       onclick="return confirm('Are you want to remove this?')" class="btn btn-danger enable-tooltip" data-original-title="Delete Record"><i class="fa fa-times"></i></a>
-            
-          <?php if($blog['Blog']['admin_approve']==1){ ?>
-                                        <a href="javascript:void(0);"  onclick="active_blog(<?php echo $blog['Blog']['id'];?>)" class="btn btn-success enable-tooltip" data-original-title="Inactive Record"><i class="fa fa-check-circle"></i></a>
 
-          <?php } else if($blog['Blog']['admin_approve']==0){ ?>
-                                        <a href="javascript:void(0);" onclick="Inactive_blog(<?php echo $blog['Blog']['id'];?>)" class="btn btn-warning enable-tooltip" data-original-title="Inactive Record"><i class="fa fa-circle-o"></i></a>
+                                        <a href="javascript:void(0);" onclick="edit(<?php echo $category['FaqCategory']['id'];?>)" class="btn btn-info enable-tooltip" data-original-title="Manage Account"><i class="fa fa-sign-in"></i></a>
+
+                                        <a href="javascript:void(0);" onclick="del(<?php echo $category['FaqCategory']['id'];?>)" class="btn btn-danger enable-tooltip" data-original-title="Delete Record"><i class="fa fa-times"></i></a>
+
+          <?php if($category['FaqCategory']['status']== 1){ ?>
+                                        <a href="javascript:void(0);"  onclick="active(<?php echo $category['FaqCategory']['id'];?>)" class="btn btn-success enable-tooltip" data-original-title="Inactive Record"><i class="fa fa-circle-o"></i></a>
+
+          <?php } else if($category['FaqCategory']['status']== 0){ ?>
+                                        <a href="javascript:void(0);" onclick="Inactive(<?php echo $category['FaqCategory']['id'];?>)" class="btn btn-warning enable-tooltip" data-original-title="Inactive Record"><i class="fa fa-circle-o"></i></a>
           <?php } ?>
 
                                         
-                                        <!--fa fa-life-bouy-->
+
+                                      
                                     </div>
                                 </td>
-
-                            </tr>
+                      
+                      
+                      
+                      
+		
+	</tr>
 <?php endforeach; ?>
      
         </tbody>
         </table>
-    <p><?php echo $this->Paginator->counter(array(
-    'format' => __('Page {:page} of {:pages}, showing {:current} records out of {:count} total, starting on record {:start}, ending on {:end}')));?>    </p>
-        <div class="paging">
-        <?php
-            echo $this->Paginator->prev('< ' . __('previous'), array(), null, array('class' => 'prev disabled'));
-            echo $this->Paginator->numbers(array('separator' => ''));
-            echo $this->Paginator->next(__('next') . ' >', array(), null, array('class' => 'next disabled'));
-        ?>
-        </div>
+	<p><?php echo $this->Paginator->counter(array(
+	'format' => __('Page {:page} of {:pages}, showing {:current} records out of {:count} total, starting on record {:start}, ending on {:end}')));?>	</p>
+		<div class="paging">
+		<?php
+			echo $this->Paginator->prev('< ' . __('previous'), array(), null, array('class' => 'prev disabled'));
+			echo $this->Paginator->numbers(array('separator' => ''));
+			echo $this->Paginator->next(__('next') . ' >', array(), null, array('class' => 'next disabled'));
+		?>
+		</div>
 
         </div>
         
@@ -246,7 +205,16 @@ echo $this->Html->css('bootstrap-chosen', array('inline' => true));
 </div>
  <!-- <div class="container">-->
 <script>
+function getViewUser(userid){
+  //alert(userid);
+	$.post('<?php echo($this->webroot)?>admin/agencies/view/'+userid,function(data){
 
+        $("#myModal").modal("show");   
+         $('#stack1_view').empty();
+        $('#stack1_view').html(data); 
+       
+	});
+    }
 $(document).ready(function(){
 $('[data-toggle="tooltip"]').tooltip();
 $("#advanceSearch").click(function(){
@@ -271,9 +239,9 @@ function del(aa){
   
       if (a ==true)
       {
-        location.href="<?php echo $this->webroot?>admin/agencies/delete/"+aa;
+        location.href="<?php echo $this->webroot?>admin/faqs/deletefaqcat/"+aa;
       }else{
-          location.href="<?php echo $this->webroot?>admin/agencies";
+          location.href="<?php echo $this->webroot?>admin/faqs/faqcategorylist";
           }
 }
 
@@ -283,7 +251,7 @@ function active(aa) {
         var a = confirm("Are you sure, you want to inactive status?")
         if (a)
         {
-            location.href = "<?php echo $this->webroot?>admin/users/activeblog/" + aa;
+            location.href = "<?php echo $this->webroot?>admin/faqs/activefaqcat/" + aa;
         }
     }
 
@@ -292,27 +260,7 @@ function active(aa) {
         var a = confirm("Are you sure, you want to active status?")
         if (a)
         {
-            location.href = "<?php echo $this->webroot?>admin/users/activeblog/" + aa;
-        }
-    }
-
-
-    function active_blog(aa) {
-
-        var a = confirm("  Are you sure, you want to cancle the approval of this record?")
-        if (a)
-        {
-            location.href = "<?php echo $this->webroot?>admin/users/activeblog/" + aa;
-        }
-    }
-
-    function Inactive_blog(aa) {
-
-        var a = confirm("Are you sure, you want to approve this record?")
-        
-        if (a)
-        {
-            location.href = "<?php echo $this->webroot?>admin/users/activeblog/" + aa;
+            location.href = "<?php echo $this->webroot?>admin/faqs/activefaqcat/" + aa;
         }
     }
 
@@ -320,63 +268,11 @@ function edit(aa) {
 
        // var a = confirm("Are you sure, you want to edit?")
        
-            location.href = "<?php echo $this->webroot?>admin/users/editagency/" + aa;
+            location.href = "<?php echo $this->webroot?>admin/faqs/editcat/" + aa;
        
     }
   
- function AddNotes(userid) {
-        //alert(userid);
-        //$.post('<?php echo($this->webroot)?>admin/users/usernote/'+userid,function(data){
-        $("#hid_id").val(userid);
-        $("#myModal1").modal("show");
-
-        //$('#stack1_view').empty();
-        //$('#stack1_view').html(data); 
-
-        //});
-    }
-</script>
-
-
-
-  <script>
-function getViewUser(userid){
-  //alert(userid);
-    $.post('<?php echo($this->webroot)?>admin/escorts/view/'+userid,function(data){
-
-        $("#myModal").modal("show");   
-         $('#stack1_view').empty();
-        $('#stack1_view').html(data); 
-       
-    });
-    }
-$(document).ready(function(){
-$('[data-toggle="tooltip"]').tooltip();
-$("#advanceSearch").click(function(){
-$("#filterInput").hide();
-$("#adv_box").show();
-$('.select-chosen').chosen();
-});
-<?php if(isset($this->request->data['Filter']['advace_search_type'])==1){?>
-$('.select-chosen').chosen();
-<?php } ?>        
-});
-
-function advance_close()
-{
- $("#adv_box").hide();
- $("#filterInput").show();
-}
-
-function del(aa){
-  var a=confirm("Are you sure, you want to delete this?")
-      if (a)
-      {
-        location.href="<?php echo $this->webroot?>admin/users/delete/"+aa;
-      } 
-}
-  
-
+ 
 </script>
 
 
@@ -384,23 +280,32 @@ function del(aa){
   <!-- Trigger the modal with a button -->
 
   <!-- Modal -->
-  <div class="modal fade" id="classifiedmodal" role="dialog">
+  <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog modal-md">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Blog Details</h4>
-            </div>
-            <div class="modal-body" id="details">
-                
-
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Agency Detail</h4>
         </div>
+          <div class="modal-body">
+      <table>
+    <thead>
+        <tr>
+      <th>Field Name</th>
+      <th>Data</th>
+        </tr>
+    </thead>
+    <tbody id="stack1_view">
+        
+    </tbody>
+      </table>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
     </div>
-</div>
+  </div>
   
   
   
@@ -436,18 +341,6 @@ function del(aa){
     </div>
 </div>
 
-
-<script>
-    function view(id)
-        {
-
-        $.get("<?php echo $this->webroot;?>admin/blogs/view/"+id,function(data){
-        var html="<table style='width:100%;'><tr style='line-height:40px;'><td>Title:</td><td>"+data.name+"</td></tr><tr><td>Description:</td><td>"+data.contaent+"</td></tr><tr><td>Image:</td><td><img src='"+data.image+"' style='height:100px;width:100px;'></td></tr></table>"    ;
-        $("#classifiedmodal").modal("show");
-        $("#details").html(html);
-        },"json");
-    }
-</script>
   <style>
       .block{
         margin-bottom:20px;   
@@ -516,31 +409,31 @@ function del(aa){
     /*Kallol css*/
     
     .table-options {
-            width: 98%;
+		    width: 98%;
     margin: 0 auto;
-    }
-    .table-options > .pull-left {
-         padding: 10px 0;
-    }
-    .gap_up  {
-        margin-bottom:5px;
-        
-    }
-    .gap_up_down {
-        margin-top: 5px;
-    }
-    .adv-table {
-        padding:0;
-    }
-    .gap_row {
-        width: 98%;
-        margin: 0 auto;
-        background: #fff;
-        padding: 10px 0;
-    }
-    #adv_box {
-        padding:0;
-    }
+	}
+	.table-options > .pull-left {
+		 padding: 10px 0;
+	}
+	.gap_up  {
+		margin-bottom:5px;
+		
+	}
+	.gap_up_down {
+		margin-top: 5px;
+	}
+	.adv-table {
+		padding:0;
+	}
+	.gap_row {
+		width: 98%;
+		margin: 0 auto;
+		background: #fff;
+		padding: 10px 0;
+	}
+	#adv_box {
+		padding:0;
+	}
   </style>
 <style type="text/css">
     .widget-simple {

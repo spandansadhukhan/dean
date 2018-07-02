@@ -13,8 +13,14 @@
         </header>
         <div class="panel-body">
         <div class="adv-table">
+            
+            <div class="btn-group btn-group-sm pull-right">
+					<a id="style-hover" class="btn btn-primary gap_up gap_up_down" title="" data-toggle="tooltip" href="<?php echo $this->webroot; ?>admin/faqs/add" data-original-title="Add New Category">Add New</a>
+				</div>
         <table  class="display table table-bordered table-striped" id="dynamic-table">
+            
         <thead>
+            
        <!-- <tr>
             <th>Rendering engine</th>
             <th>Browser</th>
@@ -34,30 +40,21 @@
 	<tr class="gradeX">
 		<td><?php echo h($faq['Faq']['id']); ?>&nbsp;</td>
                 <td>
-                    <?php 
-                    if($faq['Faq']['type']=='G')
-                    {
-                        echo "General FAQ";
-                    }
-                    if($faq['Faq']['type']=='E')
-                    {
-                        echo "Escort FAQ";
-                    }
-                    if($faq['Faq']['type']=='C')
-                    {
-                        echo "Client FAQ";
-                    }
-                    if($faq['Faq']['type']=='A')
-                    {
-                        echo "Advertise FAQ";
-                    }
-                    ?>
+                    <?php echo h($faq['FaqCategory']['name']); ?>
                     
                 </td>
 		<td><?php echo h($faq['Faq']['title']);?></td>
 		<td class="actions">
-			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $faq['Faq']['id'])); ?> |
-                        <?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $faq['Faq']['id']), null, __('Are you sure you want to delete # %s?', $faq['Faq']['id'])); ?>
+			
+                        <div class="btn-group btn-group-sm">  
+
+
+
+                            <a href="javascript:void(0);" onclick="edit(<?php echo $faq['Faq']['id'];?>)" class="btn btn-info enable-tooltip" data-original-title="Manage Account"><i class="fa fa-sign-in"></i></a>
+
+                            <a href="javascript:void(0);" onclick="del(<?php echo $faq['Faq']['id'];?>)" class="btn btn-danger enable-tooltip" data-original-title="Delete Record"><i class="fa fa-times"></i></a>
+
+                        </div>
 
 		</td>
 	</tr>
@@ -79,3 +76,32 @@
 <script src="<?php echo $this->webroot;?>admin_styles/js/dynamic_table_init.js"></script>
 <!--body wrapper end-->
 <?php } ?>
+
+<script>
+
+
+function del(aa){
+  var a =confirm("Are you sure, you want to delete this?");
+  
+  
+      if (a ==true)
+      {
+        location.href="<?php echo $this->webroot?>admin/faqs/delete/"+aa;
+      }else{
+          location.href="<?php echo $this->webroot?>admin/faqs/";
+          }
+}
+
+
+
+
+function edit(aa) {
+
+       // var a = confirm("Are you sure, you want to edit?")
+       
+            location.href = "<?php echo $this->webroot?>admin/faqs/edit/" + aa;
+       
+    }
+  
+ 
+</script>
