@@ -1,0 +1,840 @@
+
+@media (max-width: 767px) {
+/****************************** ****************************** 
+   					Home Page CSS
+****************************** ******************************/
+#fpage {
+	display: block;
+	margin: 10px auto;
+	width: 95%;
+}
+#f_wrapper {
+	width: 100%;
+}
+.wrapper {
+	width: 100%;
+}
+.online-sec {
+	text-align: center;
+}
+.head-top {
+	clear: both;
+	height: auto;
+	margin-bottom: 10px;
+}
+.logo {
+	display: block;
+	float: none;
+	margin: 10px 0;
+	text-align: center;
+}
+.head-but {
+	display: block;
+	float: none;
+	text-align: center;
+}
+.head-but img {
+	margin-bottom: 8px;
+	width: 58px;
+}
+.head-but a {
+	margin: 0;
+	text-align: center;
+	width: 38%;
+}
+#m-menu {
+	position: relative;
+}
+#m-menu ul {
+	display: none;
+}
+.topmargin {
+	display: block;
+}
+.section-1 {
+	padding: 10px 5px;
+}
+.about-left {
+	float: none;
+	margin-bottom: 5px;
+	width: 100%;
+}
+.about-left h1 {
+	font-size: 26px;
+	line-height: 30px;
+}
+.about-left h2 {
+	font-size: 16px;
+}
+.about-left p {
+	font-size: 14px;
+}
+.about-left a {
+	display: inline-block;
+	font-size: 16px;
+	padding: 6px 16px;
+}
+.about-right {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	float: none;
+	width: 100%;
+}
+.about-right img {
+	width: 100%;
+}
+.detail2 {
+	margin: 10px 0;
+}
+.detail2 ul li {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	margin: 0 0 3px;
+	width: 100%;
+	font-size: 13px;
+}
+.labe {
+	width: 30%;
+}
+.section-2 {
+	padding: 20px 0;
+}
+.section-2 h1 {
+	font-size: 22px;
+}
+.section-2 a {
+	font-size: 12px;
+	padding: 10px 0;
+	width: 46%;
+	margin-bottom: 3px;
+}
+.section-3 {
+	padding: 20px 5px;
+}
+.gallery-part ul li {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	margin: 0 0 10px;
+	padding: 5px;
+	width: 100%;
+}
+.black_bg h3 {
+	font-size: 14px;
+}
+.black_bg a {
+	font-size: 14px;
+	padding: 6px 20px;
+}
+.section-4 {
+	padding: 15px 5px;
+}
+.box-part {
+	float: none;
+	margin: 0 0 12px;
+	width: 100%;
+}
+.box-part h1 {
+	font-size: 14px;
+	height: 50px;
+	line-height: 50px;
+	padding: 0 12px;
+}
+.no-record {
+	font-size: 15px;
+}
+.review-part ul li p {
+	font-size: 12px;
+	line-height: 20px;
+}
+.status-part ul li p {
+	font-size: 12px;
+	line-height: 20px;
+}
+.load-btn {
+	margin-top: 10px;
+}
+footer {
+	width: 100%;
+	min-height: auto;
+}
+.footer-menu {
+	padding: 10px;
+}
+.powered {
+	font-size: 13px;
+	padding-bottom: 15px;
+}
+/****************************** ****************************** 
+   					Service Page CSS
+****************************** ******************************/
+.main-section {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding: 0 5px;
+}
+.title-part h2 {
+	font-size: 16px;
+}
+.service-part ul li {
+	box-sizing: border-box;
+	float: none;
+	font-size: 14px;
+	margin: 0 0 4px;
+	width: 100%;
+}
+/****************************** ****************************** 
+   					Photo Gallery Page CSS
+****************************** ******************************/
+.mybut {
+	display: none;
+}
+/****************************** ****************************** 
+   					Video Gallery Page CSS
+****************************** ******************************/
+.videogallery ul li {
+	margin: 0 0 20px;
+	width: 100%;
+}
+.videogallery ul li iframe {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+/****************************** ****************************** 
+   					Shop Page CSS
+****************************** ******************************/
+#primaryBottomTabs_title97 li, #primaryBottomTabs_title98 li {
+	float: none;
+	margin-right: 0;
+}
+#primaryBottomTabs_title97 li a, #primaryBottomTabs_title98 li a {
+	margin-right: 0;
+}
+.browse-movie ul li {
+	margin-bottom: 12px;
+	padding: 5px;
+}
+.mov-thumb {
+	float: none;
+	margin: 0 auto 5px;
+	width: 185px;
+}
+.mov-det {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	float: none;
+	padding: 5px 8px;
+	width: 100%;
+}
+.mov-det h2 {
+	font-size: 16px;
+}
+.mov-det p {
+	font-size: 12px;
+	height: auto;
+	line-height: 18px;
+}
+.mov-det1 {
+	background: none repeat scroll 0 0 #dedede;
+	box-shadow: 0 -4px 0 0 #e2c575;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	float: none;
+	margin: 0;
+	width: 100%;
+	height: auto;
+}
+/****************************** ****************************** 
+   					Blog Page CSS
+****************************** ******************************/
+.k2InfoWrap {
+	width: 15%;
+}
+.k2InfoWrap span.itemDayCreated {
+	font-size: 28px;
+}
+.k2ContentWrap {
+	width: 84%;
+}
+section.catItemHeader h2.catItemTitle {
+	font-size: 16px;
+}
+.ItemIntroText p {
+	font-size: 14px;
+	line-height: 20px;
+}
+/****************************** ****************************** 
+   					Contact Page CSS
+****************************** ******************************/
+.contact-form {
+	float: none;
+	width: 100%;
+	margin-bottom: 15px;
+}
+.tom1 label {
+	margin: 0 0 5px;
+	width: 100%;
+}
+.tom1 input[type="text"], .tom1 input[type="password"], .tom1 textarea {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	width: 100% !important;
+}
+.tom1 input#captcha {
+	width: 124px !important;
+}
+.tbut1 {
+	margin-left: 0;
+	display: block;
+	text-align: center;
+}
+.contact-info {
+	float: none;
+	width: 100%;
+}
+.contact-info .cc1 span {
+	width: 50%;
+}
+}
+
+@media (max-device-width: 640px) and (orientation: landscape) {
+/****************************** ****************************** 
+   					Home Page CSS
+****************************** ******************************/
+.votes {
+	margin-right: 3px;
+}
+.head-but img {
+	margin-bottom: 8px;
+	width: 34px;
+}
+.head-but a {
+	margin: 0;
+	text-align: center;
+	width: 26%;
+}
+/****************************** ****************************** 
+   					Video Gallery Page CSS
+****************************** ******************************/
+.videogallery ul li {
+	height: 350px;
+}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+/****************************** ****************************** 
+   					Home Page CSS
+****************************** ******************************/
+#fpage {
+	display: block;
+	margin: 15px auto;
+	width: 95%;
+}
+#f_wrapper {
+	width: 100%;
+}
+.wrapper {
+	width: 100%;
+}
+.online-sec {
+	text-align: center;
+}
+.head-top {
+	display: block;
+	height: 68px;
+	padding: 0 5px;
+}
+.head-but img {
+	margin: 0;
+	width: 44px;
+}
+.head-but {
+	padding-top: 14px;
+}
+#m-menu {
+	position: relative;
+}
+#m-menu ul {
+	display: none;
+}
+.topmargin {
+	display: block;
+}
+.section-1 {
+	padding: 10px 5px;
+}
+.about-left {
+	width: 50%;
+}
+.about-left h1 {
+	font-size: 26px;
+	line-height: 30px;
+}
+.about-left h2 {
+	font-size: 16px;
+}
+.about-left p {
+	font-size: 14px;
+}
+.about-left a {
+	display: inline-block;
+	font-size: 16px;
+	padding: 6px 16px;
+}
+.about-right {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	width: 49%;
+}
+.about-right img {
+	width: 100%;
+}
+.detail2 {
+	margin: 10px 0;
+}
+.detail2 ul li {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	font-size: 13px;
+}
+.labe {
+	width: 30%;
+}
+.section-2 {
+	padding: 20px 0;
+}
+.section-2 h1 {
+	font-size: 22px;
+}
+.section-2 a {
+	font-size: 12px;
+	margin-bottom: 3px;
+	padding: 10px 0;
+	width: 32%;
+}
+.section-3 {
+	padding: 20px 5px;
+}
+.black_bg {
+	padding: 20px 5px;
+}
+.gallery-part ul li {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	margin: 0 0.5% 10px;
+	padding: 5px;
+	width: 32.5%;
+}
+.black_bg h3 {
+	font-size: 14px;
+}
+.black_bg a {
+	font-size: 14px;
+	padding: 6px 20px;
+}
+.section-4 {
+	padding: 15px 5px;
+}
+.box-part {
+	float: none;
+	margin: 0 0 12px;
+	width: 100%;
+}
+.box-part h1 {
+	font-size: 14px;
+	height: 50px;
+	line-height: 50px;
+	padding: 0 12px;
+}
+.no-record {
+	font-size: 15px;
+}
+.review-part ul li p {
+	font-size: 12px;
+	line-height: 20px;
+}
+.status-part ul li p {
+	font-size: 12px;
+	line-height: 20px;
+}
+.load-btn {
+	margin-top: 10px;
+}
+footer {
+	width: 100%;
+	min-height: auto;
+}
+.footer-menu {
+	padding: 10px;
+}
+.powered {
+	font-size: 13px;
+	padding-bottom: 15px;
+}
+/****************************** ****************************** 
+   					Service Page CSS
+****************************** ******************************/
+.main-section {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding: 0 5px;
+}
+.title-part h2 {
+	font-size: 16px;
+}
+.service-part ul li {
+	box-sizing: border-box;
+	font-size: 14px;
+	margin: 0 0.5% 4px;
+	width: 49%;
+}
+/****************************** ****************************** 
+   					Photo Gallery Page CSS
+****************************** ******************************/
+.mybut {
+	font-size: 12px;
+	height: auto !important;
+	padding: 5px;
+}
+/****************************** ****************************** 
+   					Video Gallery Page CSS
+****************************** ******************************/
+.videogallery ul li {
+	margin: 0 0.5% 20px;
+	width: 49%;
+}
+.videogallery ul li iframe {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+/****************************** ****************************** 
+   					Shop Page CSS
+****************************** ******************************/
+#primaryBottomTabs_title97 li, #primaryBottomTabs_title98 li {
+	margin-right: 0;
+	width: 25%;
+}
+#primaryBottomTabs_title97 li a, #primaryBottomTabs_title98 li a {
+	margin-right: 0;
+	padding: 0;
+	text-align: center;
+}
+.browse-movie ul li {
+	margin-bottom: 12px;
+	padding: 5px;
+}
+.mov-thumb {
+	margin-bottom: 12px;
+}
+.mov-det {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding: 5px 8px;
+	width: 70%;
+}
+.mov-det h2 {
+	font-size: 16px;
+}
+.mov-det p {
+	font-size: 12px;
+	height: auto;
+	line-height: 18px;
+}
+.mov-det1 {
+	background: none repeat scroll 0 0 #dedede;
+	box-shadow: 0 -4px 0 0 #e2c575;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	margin: 0;
+	width: 100%;
+	height: auto;
+}
+/****************************** ****************************** 
+   					Contact Page CSS
+****************************** ******************************/
+.contact-form {
+	width: 60%;
+}
+.tom1 label {
+	margin: 0 0 5px;
+	width: 100%;
+}
+.tom1 input[type="text"], .tom1 input[type="password"], .tom1 textarea {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	width: 100% !important;
+}
+.tom1 input#captcha {
+	width: 124px !important;
+}
+.tbut1 {
+	margin-left: 0;
+	display: block;
+	text-align: center;
+}
+.contact-info {
+	width: 38%;
+}
+.contact-info .cc1 span {
+	width: 50%;
+}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+/****************************** ****************************** 
+   					Home Page CSS
+****************************** ******************************/
+#fpage {
+	display: block;
+	margin: 12px auto;
+	width: 98%;
+}
+#f_wrapper {
+	width: 100%;
+}
+.wrapper {
+	width: 100%;
+}
+.online-sec {
+	margin-left: 10px;
+}
+.head-top {
+	display: block;
+	height: 68px;
+	padding: 0 5px;
+}
+.head-but img {
+	margin: 0;
+	width: 44px;
+}
+.head-but {
+	padding-top: 14px;
+}
+.topmargin {
+	display: none;
+}
+.section-1 {
+	padding: 10px 5px;
+}
+.about-left {
+	width: 50%;
+}
+.about-left h1 {
+	font-size: 26px;
+	line-height: 30px;
+}
+.about-left h2 {
+	font-size: 16px;
+}
+.about-left p {
+	font-size: 14px;
+}
+.about-left a {
+	display: inline-block;
+	font-size: 16px;
+	padding: 6px 16px;
+}
+.about-right {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	width: 49%;
+}
+.about-right img {
+	width: 100%;
+}
+.detail2 {
+	margin: 10px 0;
+}
+.labe {
+	width: 30%;
+}
+.section-2 {
+	padding: 20px 0;
+}
+.section-2 h1 {
+	font-size: 22px;
+}
+.section-2 a {
+	font-size: 12px;
+	margin-bottom: 3px;
+	padding: 10px 0;
+	width: 15%;
+}
+.section-3 {
+	padding: 20px 5px;
+}
+.black_bg {
+	padding: 20px 5px;
+}
+.gallery-part ul li {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	margin: 0 0.5% 10px;
+	padding: 5px;
+	width: 32.5%;
+}
+.black_bg h3 {
+	font-size: 14px;
+}
+.black_bg a {
+	font-size: 14px;
+	padding: 6px 20px;
+}
+.section-4 {
+	padding: 15px 5px;
+}
+.box-part {
+	margin: 0 0.5% 10px;
+	width: 32.5%;
+}
+.box-part h1 {
+	font-size: 14px;
+	height: 50px;
+	line-height: 50px;
+	padding: 0 12px;
+}
+.no-record {
+	font-size: 15px;
+}
+.review-part ul li p {
+	font-size: 12px;
+	line-height: 20px;
+}
+.status-part ul li p {
+	font-size: 12px;
+	line-height: 20px;
+}
+.load-btn {
+	margin-top: 10px;
+}
+footer {
+	width: 100%;
+	min-height: auto;
+}
+.footer-menu {
+	padding: 10px;
+}
+.powered {
+	font-size: 13px;
+	padding-bottom: 15px;
+}
+/****************************** ****************************** 
+   					Service Page CSS
+****************************** ******************************/
+.main-section {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding: 0 5px;
+}
+.title-part h2 {
+	font-size: 16px;
+}
+.service-part ul li {
+	box-sizing: border-box;
+	font-size: 14px;
+	margin: 0 0.5% 4px;
+	width: 49%;
+}
+/****************************** ****************************** 
+   					Photo Gallery Page CSS
+****************************** ******************************/
+.mybut {
+	font-size: 12px;
+	height: auto !important;
+	padding: 7px;
+}
+/****************************** ****************************** 
+   					Video Gallery Page CSS
+****************************** ******************************/
+.videogallery ul li {
+	margin: 0 0.5% 20px;
+	width: 32%;
+}
+.videogallery ul li iframe {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+/****************************** ****************************** 
+   					Shop Page CSS
+****************************** ******************************/
+#primaryBottomTabs_title97 li, #primaryBottomTabs_title98 li {
+	margin-right: 0;
+	width: 25%;
+}
+#primaryBottomTabs_title97 li a, #primaryBottomTabs_title98 li a {
+	margin-right: 0;
+	padding: 0;
+	text-align: center;
+}
+.browse-movie ul li {
+	margin-bottom: 12px;
+	padding: 5px;
+}
+.mov-thumb {
+	margin-bottom: 12px;
+}
+.mov-det {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding: 5px 8px;
+	width: 51%;
+}
+.mov-det h2 {
+	font-size: 16px;
+}
+.mov-det p {
+	font-size: 12px;
+	height: auto;
+	line-height: 18px;
+}
+/****************************** ****************************** 
+   					Contact Page CSS
+****************************** ******************************/
+.contact-form {
+	width: 60%;
+}
+.tom1 label {
+	margin: 0 0 5px;
+	width: 100%;
+}
+.tom1 input[type="text"], .tom1 input[type="password"], .tom1 textarea {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	width: 100%;
+}
+.tom1 input#captcha {
+	width: 124px !important;
+}
+.tbut1 {
+	margin-left: 0;
+	display: block;
+	text-align: center;
+}
+.contact-info {
+	width: 38%;
+}
+.contact-info .cc1 span {
+	width: 50%;
+}
+}

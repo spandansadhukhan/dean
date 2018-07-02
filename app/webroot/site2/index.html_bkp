@@ -1,0 +1,266 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Escort</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet"> 
+  </head>
+	<body>
+		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			<div class="container">
+		        <div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+		          	<!-- You'll want to use a responsive image option so this logo looks good on devices - I recommend using something like retina.js (do a quick Google search for it and you'll find it) -->
+		          	<a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""></a>
+		        </div>
+        		<!-- Collect the nav links, forms, and other content for toggling -->
+        		<div class="collapse navbar-collapse navbar-ex1-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#home">Home</a></li>
+						<li><a href="#about-me">About</a></li>
+						<li><a href="#gallery">Gallery</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		
+		<section class="home_banner" id="home">
+			<div class="bs-example">
+			    <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+			    	<!-- Carousel indicators -->
+			        <ol class="carousel-indicators">
+			            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			            <li data-target="#myCarousel" data-slide-to="1"></li>
+			            <li data-target="#myCarousel" data-slide-to="2"></li>
+			        </ol>   
+			        <!-- Wrapper for carousel items -->
+			        <div class="carousel-inner">
+			            <div class="active item">
+			                <img src="images/banner-1.jpg" alt="First Slide">
+			            </div>
+			            <div class="item">
+			                <img src="images/banner-2.jpg" alt="Second Slide">
+			            </div>
+			            <div class="item">
+			                <img src="images/banner-3.jpg" alt="Third Slide">
+			            </div>
+			        </div>
+			        <!-- Carousel controls -->
+			        <!--<a class="carousel-control left" href="#myCarousel" data-slide="prev">
+			            <span class="glyphicon glyphicon-chevron-left"></span>
+			        </a>
+			        <a class="carousel-control right" href="#myCarousel" data-slide="next">
+			            <span class="glyphicon glyphicon-chevron-right"></span>
+			        </a>-->
+				</div>
+			</div>
+		</section>
+	
+
+		<section class="about" id="about-me">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<h1><span>About Me</span></h1>
+					</div>
+				</div>
+				<div class="row about-bottom">
+					<div class="col-md-10 center-div">
+						<div class="row">
+							<div class="col-md-6 col-sm-6">
+								<h3>Lorem ipsum dolor sit amet conseqr</h3>
+								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet</p>
+								<p>Veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet</p>
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<h3>Psum dolor sit amet conseqr</h3>
+								<ul class="about-list">
+									<li>
+										<p><b>Name:</b> Monalisa Dsouza</p>
+									</li>
+									<li>
+										<p><b>Age:</b> 21 yrs</p>
+									</li>
+									<li>
+										<p><b>Rate:</b> $59/hr.</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	
+		<section class="gallery-section" id="gallery">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1><span>Gallery</span></h1>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<ul class="gallery">
+							<li>
+								<a class="fancybox" href="images/1_b.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="images/1_s.jpg" alt="" /></a>
+							</li>
+							<li>
+								<a class="fancybox" href="images/2_b.jpg" data-fancybox-group="gallery" title="Etiam quis mi eu elit temp"><img src="images/2_s.jpg" alt="" /></a>
+							</li>
+							<li>
+								<a class="fancybox" href="images/3_b.jpg" data-fancybox-group="gallery" title="Cras neque mi, semper leon"><img src="images/3_s.jpg" alt="" /></a>
+							</li>
+							<li>
+								<a class="fancybox" href="images/4_b.jpg" data-fancybox-group="gallery" title="Sed vel sapien vel sem uno"><img src="images/4_s.jpg" alt="" /></a>
+							</li>
+							<li>
+								<a class="fancybox" href="images/4_b.jpg" data-fancybox-group="gallery" title="Etiam quis mi eu elit temp"><img src="images/4_s.jpg" alt="" /></a>
+							</li>
+							<li>
+								<a class="fancybox" href="images/3_b.jpg" data-fancybox-group="gallery" title="Sed vel sapien vel sem uno"><img src="images/3_s.jpg" alt="" /></a>
+							</li>
+							<li>
+								<a class="fancybox" href="images/2_b.jpg" data-fancybox-group="gallery" title="Etiam quis mi eu elit temp"><img src="images/2_s.jpg" alt="" /></a>
+							</li>
+							<li>
+								<a class="fancybox" href="images/1_b.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="images/1_s.jpg" alt="" /></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="contact-section text-center" id="contact">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<h1><span>Contact Me</span></h1>
+					</div>
+				</div>
+				<div class="row about-bottom">
+					<div class="col-md-10 center-div">
+						<h3><i class="fa fa-phone"></i> 611-123-568</h3>
+						<h3><i class="fa fa-link"></i> escortname@gmail.com</h3>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-sm-6">
+						<p class="copyright">© 2016 companyname | All rights reserved.</p>
+					</div>
+					<div class="col-md-6 col-sm-6">
+						<ul class="social-links">
+							<li><a href="" class="fa fa-facebook"></a></li>
+							<li><a href="" class="fa fa-twitter"></a></li>
+							<li><a href="" class="fa fa-google-plus"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $('.navbar-collapse .navbar-nav li a').on('click',function(event){
+                var $anchor = $(this);
+                $('html, body').stop().animate({
+                    scrollTop: $($anchor.attr('href')).offset().top
+                }, 1000,'easeInOutExpo');
+                event.preventDefault();
+            });
+        });
+    </script>
+
+	 <!-- Add fancyBox main JS files -->
+	<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.fancybox').fancybox();
+			// Change title type, overlay closing speed
+			$(".fancybox-effects-a").fancybox({
+				helpers: {
+					title : {
+						type : 'outside'
+					},
+					overlay : {
+						speedOut : 0
+					}
+				}
+			});
+
+			// Disable opening and closing animations, change title type
+			$(".fancybox-effects-b").fancybox({
+				openEffect  : 'none',
+				closeEffect	: 'none',
+
+				helpers : {
+					title : {
+						type : 'over'
+					}
+				}
+			});
+
+			// Set custom style, close if clicked, change title type and overlay color
+			$(".fancybox-effects-c").fancybox({
+				wrapCSS    : 'fancybox-custom',
+				closeClick : true,
+
+				openEffect : 'none',
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					overlay : {
+						css : {
+							'background' : 'rgba(238,238,238,0.85)'
+						}
+					}
+				}
+			});
+
+			// Remove padding, set opening and closing animations, close if clicked and disable overlay
+			$(".fancybox-effects-d").fancybox({
+				padding: 0,
+
+				openEffect : 'elastic',
+				openSpeed  : 150,
+
+				closeEffect : 'elastic',
+				closeSpeed  : 150,
+
+				closeClick : true,
+
+				helpers : {
+					overlay : null
+				}
+			});
+		});
+	</script>
+	
+
+</html>

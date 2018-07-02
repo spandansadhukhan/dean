@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group name="Group 20170704-11:05:58">
+            <file>file:/var/www/html/newver/app/Config/core.php</file>
+            <file>file:/var/www/html/newver/app/View/Messages/admin_index.ctp</file>
+            <file>file:/var/www/html/newver/app/Controller/UsersController.php</file>
+            <file>file:/var/www/html/newver/app/View/Contacts/admin_index.ctp</file>
+            <file>file:/var/www/html/newver/app/Controller/ContactsController.php</file>
+        </group>
+    </open-files>
+</project-private>

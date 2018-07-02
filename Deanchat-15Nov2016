@@ -1,0 +1,256 @@
+] Avik Ghosh: hello Dean
+[3:23:23 PM] Avishek Roy: Hello Dean how are you ?
+[3:23:32 PM] kiwibuydirect: hi hows things
+[3:23:59 PM] Avishek Roy: Yeah the things are going perfectly as you have sent the mail.
+[3:24:48 PM] kiwibuydirect: ok good, I have made a list of notes so I will copy and paste each one by one on here.
+[3:24:58 PM] kiwibuydirect: are you ready?
+[3:24:59 PM] Avishek Roy: Ok Sure Dean.
+[3:25:09 PM] kiwibuydirect: ok here we go.
+[3:25:23 PM] kiwibuydirect: 1. The Admin CMS must have absolute and full control over the front end of the site. I must be able to adjust anything including layout, colour and also be able to change, add, delete any feature.
+[3:25:50 PM] Avishek Roy: Ok
+[3:26:05 PM] kiwibuydirect: 2. If you have a more user friendly way a feature can function then again by all means let me know as the web site demo I sent you is just a guideline.
+
+
+
+[3:26:42 PM] kiwibuydirect: 3. I do not want the Front End of the web site to look exactly the same as the demo version, we must have differences in the layout, design and features otherwise it looks like we have simply copied from the demo site and this does not look good and is the last thing I need. Please see the Home Page update I sent that I instructed you to reduce the current Large Photo Banner by approx 25% and insert a Scrolling Photo Banner under this large banner. Only paid memberships which are VIE and Premium Escorts will show on the scrolling photo banner.
+
+
+
+
+[3:27:46 PM] Avishek Roy: Dean can i ask some clarification ?
+[3:27:57 PM] kiwibuydirect: sure
+[3:28:48 PM] Avishek Roy: Ok in the frst point you have stated that Admin can change layout ?
+[3:31:15 PM] kiwibuydirect: Ok I don't mean change the template I just mean change simple things like the header and footer and maybe colour, once I am happy with the template design and layout then it will stay like this for some time until we one day decide to update the look of the site, much like re decorating or repainting your house.
+[3:31:59 PM] Avishek Roy: Ok Sure got your point Dean
+[3:32:18 PM] kiwibuydirect: ok good.... I will load the next note.
+
+
+[3:32:40 PM] kiwibuydirect: 4. Wordpress offers thousands of exceptional plugins and various features that can be incorporated into my web site, if you have experience with Wordpress and again please let me know of any Wordpress plug-in or feature that can be added and that can replace and do a better job than any option or feature within my web site then by all means let me know.
+
+
+[3:33:50 PM] kiwibuydirect: 5. Regarding the Escort Shops: every time an Escort loads a photo or video in her private gallery to sell there are two things that must happen, 1st the escort must agree to our terms and conditions by clicking in a box or something similar when she loads photos, also give the option of clicking in another box saying Don’t Show me this as I have read and understand these Terms and Conditions, 2nd all private gallery photos and videos must be checked and verified by us before they go live so we know they do not breach our terms and conditions plus we can see it is the escort and not someone else.
+[3:33:55 PM] Avishek Roy: Dean at the present scenario Wordpress cannot be integrated.
+[3:34:46 PM] kiwibuydirect: The site needs to be built in wordpress as this was always the case from the start.
+[3:36:11 PM] kiwibuydirect: The initial quote from Deepesh was that you would build this site using Wordpress, no one has ever informed me of any change on this!
+[3:36:33 PM] Avik Ghosh: hello Dean In WP this type of Huge site will not be stable
+[3:36:41 PM] Avik Ghosh: It is not an ordinary CMS site
+[3:36:55 PM] Avik Ghosh: It is a site with Huge Logical Functionality
+[3:37:01 PM] Avik Ghosh: The MVC is best for it
+[3:37:08 PM] Avik Ghosh: Thats why we are using the MVC
+[3:37:21 PM] kiwibuydirect: So what web developer software are you using? Joomla?
+[3:37:28 PM] Avik Ghosh: So That site will be potential enough and stable
+[3:37:29 PM] kiwibuydirect: What is MVC?
+[3:37:42 PM] Avik Ghosh: Model view Controller Architechture
+[3:37:51 PM] Avik Ghosh: we are using cake PHP
+[3:38:03 PM] Avik Ghosh: the best MVC Framework in PHP
+[3:38:19 PM] kiwibuydirect: Are you using web developer software that has easily accessible plugins?
+[3:38:50 PM] Avik Ghosh: no... the Plugins like Wp will not attach with it... We have to do all
+[3:39:05 PM] Avik Ghosh: We are doing them in hand ... not using any plugin
+[3:39:12 PM] kiwibuydirect: Ok so what happens if we need to load plugins, how easy will this be able to do?
+[3:39:49 PM] Avik Ghosh: no... You are making it from scratch.. Only according to your functionality
+[3:42:56 PM] kiwibuydirect: I am a little confused, I was told from the start that the Demo site I sent you links of was not WP so you would build my web site using Wordpress, I still have the messages that I was sent stating that you would build using WP, no one has ever informed me or told me any different, I am not very happy about this as it removes so much functionality for us plus we will b that it would be built
+[3:43:50 PM] kiwibuydirect: ........we will never be able to add on features/options etc which is certainly not user friendly.
+[3:44:06 PM] Avik Ghosh: Dean Sandeep told you at the very begening that we will be using Cake PHP...
+[3:44:25 PM] Avik Ghosh: becahse this type of website with content If we made in Wp it Hacks
+[3:45:06 PM] kiwibuydirect: I have no record of that statement........on what date/time did he tell me this and how?
+[3:45:11 PM] Avik Ghosh: Dean In terms of user friendly we are following the exact design and things that you have given us
+[3:45:38 PM] kiwibuydirect: Ok so if I require an updatwe
+[3:46:35 PM] kiwibuydirect: sorry.....so if I require any changes, updates, add ons etc they will have to be built from scratch, is this correct?
+[3:46:46 PM] Deepesh: nope
+[3:46:59 PM] Deepesh: We can do those functions in the existing site
+[3:47:07 PM] Deepesh: That will be easy to manage
+[3:47:44 PM] Sandeep Tewary: Yu can manage everything from the site itself
+[3:47:47 PM] kiwibuydirect: ok no point focusing on this as it is way to late now to argue about this.
+[3:48:04 PM] Sandeep Tewary: The admin panel we have built is very user friendly
+[3:48:19 PM] Sandeep Tewary: and you can manage the website from there
+[3:48:27 PM] Sandeep Tewary: So please do not worry
+[3:48:35 PM] kiwibuydirect: For future reference, if any changes in design, layout, coding etc are done then I need to know about this straight away.
+[3:48:46 PM] Sandeep Tewary: sure
+[3:48:57 PM] kiwibuydirect: Ok no problem.....lets carry on.
+[3:49:21 PM] kiwibuydirect: 5. Regarding the Escort Shops: every time an Escort loads a photo or video in her private gallery to sell there are two things that must happen, 1st the escort must agree to our terms and conditions by clicking in a box or something similar when she loads photos, also give the option of clicking in another box saying Don’t Show me this as I have read and understand these Terms and Conditions, 2nd all private gallery photos and videos must be checked and verified by us before they go live so we know they do not breach our terms and conditions plus we can see it is the escort and not someone else.
+[3:49:44 PM] Avishek Roy: This is Escort private shop right Dean?
+[3:50:12 PM] Avishek Roy: not the in general shop that Avik and I stated that Admin can add products and sell to our site ?
+[3:50:37 PM] Avishek Roy: but int he latest doc over the flow you stated that you required this at very last of the flow.
+[3:50:48 PM] kiwibuydirect: yes correct, the escort private shop will not be able to sell any products for now, only Private photo gallery, private video and web cam sessions.
+[3:51:52 PM] kiwibuydirect: The general shop which is our web site shop will sell products hence why we will not be allowing escorts, agencies, clubs etc to sell products.
+[3:52:04 PM] Avishek Roy: Those products wil only show no purchase will available rigth you meant this ?
+[3:53:07 PM] kiwibuydirect: Simply Do Not have a Product Option available in the escort shop, this way that can not select product to sell.
+[3:53:45 PM] Avishek Roy: cannot get you Dean over this.
+[3:53:51 PM] Avishek Roy: escorts will have some private photos
+[3:53:59 PM] Avishek Roy: videos that is Ok
+[3:54:32 PM] Avishek Roy: now if an escort upload a private gallery can that be shown to other users ?
+[3:57:17 PM] kiwibuydirect: Ok the escorts will have what is called a Private Photo gallery and Private Video Gallery, these are more explicit photos and videos that members/users can purchase, photos in the escorts profile are only topless at most, if a User/Member wishes to see more of the escort then he has the option to view her Private Gallery by paying to join the web site, he will then be able to see any escorts Private Gallery.
+[3:57:49 PM] Avishek Roy: but you stated that for any actvites in the site user have to register
+[3:59:01 PM] Avishek Roy: Ok a registered user who have registered to our site to whom the payment will go to the Admin right ?
+[3:59:07 PM] Avishek Roy: for the private photos and videos ?
+[3:59:27 PM] kiwibuydirect: Any member/user will have access to all escorts profiles except the Private Galleries and a few other features which I will advise of what these are in they next day or so.
+[3:59:36 PM] Avishek Roy: now wehn a registered user purchases that option will be available to the user
+[3:59:50 PM] Avishek Roy: is that yhe flow you are stating right ?
+[4:00:44 PM] kiwibuydirect: We want guys to pay for a membetrship on the site, once they are a paid member then this will entitle them to the online
+[4:01:21 PM] kiwibuydirect: .....one on one chat with the escort, private galleries and a a few other features
+[4:01:53 PM] Avishek Roy: No as escort have the memebrship which we have shown to you is that similar ?
+[4:03:03 PM] kiwibuydirect: yes that is they flow I require, anyone can view escort profiles and other profiles, once the user joins then this will open up a number of different features for the new member/usre
+[4:04:44 PM] kiwibuydirect: I will send you in the next day or so the details, flow and features that the user/member will receive once they join the site.
+[4:04:53 PM] kiwibuydirect: lets move on...
+[4:05:10 PM] Avishek Roy: Dean I've one question
+[4:05:15 PM] kiwibuydirect: yes
+[4:05:37 PM] Avishek Roy: we have club CMS
+[4:06:04 PM] Avishek Roy: now what teh club will rpevide the other users ?
+[4:06:18 PM] Avishek Roy: as club can add models
+[4:06:38 PM] Avishek Roy: which we have already shown to you and those models are available
+[4:07:13 PM] kiwibuydirect: Yes a Club, Agency, Massage Parlour, Stripper Clubs will be able to add models/escorts
+[4:08:03 PM] Avishek Roy: Ok That is added but those users will have any acces over teh site like other registered escorts
+[4:08:14 PM] kiwibuydirect: To view this shared photo, go to: https://login.skype.com/login/sso?go=xmmfallback?pic=0-sa-d3-f7c5e23f10e9db17f5bb431cd29c91cb
+[4:08:51 PM] Avishek Roy: Just a minute Dean
+[4:08:57 PM] Avishek Roy: I'm opening it.
+[4:08:58 PM] kiwibuydirect: ok
+[4:09:32 PM] kiwibuydirect: when you say Users, whom are you referring to?
+[4:09:46 PM] Avishek Roy: the normal users.
+[4:10:20 PM] kiwibuydirect: Users/members are guys that join the site
+[4:10:25 PM] Avishek Roy: yeah
+[4:10:37 PM] kiwibuydirect: Ok good we are on same track
+[4:10:55 PM] kiwibuydirect: Users will have ac
+[4:11:16 PM] Avishek Roy: Ok but when those users views the clubs lsitings
+[4:11:32 PM] Avishek Roy: http://107.170.152.166/team2/escort/clubs/
+[4:11:59 PM] kiwibuydirect: Users will have access to view private galleries along with using our chat feature and a few other things, they certainly wont have Admin access if that is what you mean.
+[4:12:33 PM] Avishek Roy: No what a club will offer to the other users
+[4:12:43 PM] Avishek Roy: through the site?
+[4:13:10 PM] Avishek Roy: will they show only the models that clubs will provide?
+[4:13:24 PM] kiwibuydirect: Users can view anything on the site including which Clubs, Agency, Stripper and Massage Parlours advertising on the site.
+[4:14:07 PM] Avishek Roy: suppose you are viewing an Escort details
+[4:14:24 PM] kiwibuydirect: A club can advertise specials etc so the User can see these specials but that is it.
+[4:16:13 PM] Avishek Roy: Ok
+[4:17:15 PM] kiwibuydirect: A user will be able to view all Clubs, Agencies who are advertising on the site, if they want to book an escort through a Club or Agency then they will simply call the advertised phone number.
+[4:17:50 PM] Avishek Roy: Ok Dean.
+[4:18:05 PM] kiwibuydirect: ok good.
+[4:18:52 PM] Avishek Roy: Dean also regaridn the categories doc that you sent those are lsited int he home page
+[4:18:58 PM] kiwibuydirect: 6. All photos loaded onto the web site of escorts whether they work privately or for an Agency/Club/Massage/Parlour/Stripper must be verified by us before they are loaded onto their profile, this is where the verification process comes into play. It is really important that the Escort in the photo is actually the Escort and not some fake photo off the net. This is why the word VERIFIED is on each Escort profile so that the client can see that the photo has been verified by us and these photos are actually of the escort in question.
+[4:19:26 PM] kiwibuydirect: yes sorry was to quick to paste......categories?
+[4:20:04 PM] Avishek Roy: yeah those categories that you sent as doc
+[4:20:21 PM] kiwibuydirect: yes what is the question?
+[4:20:59 PM] Avishek Roy: the question is you mentioned in the doc some ambiguity over there
+[4:21:11 PM] kiwibuydirect: such as?
+[4:21:40 PM] kiwibuydirect: Don't get confused between Categories and Services as thewy
+[4:21:53 PM] kiwibuydirect: ........they are 2 different things.
+[4:22:00 PM] Avishek Roy: Ok
+[4:22:36 PM] Avishek Roy: so in the home page there will be categories right
+[4:22:47 PM] Avishek Roy: like as it is right now?
+[4:23:49 PM] kiwibuydirect: Yes that is correct, they Services will be listed on the Home Page under Filters
+[4:24:22 PM] Avishek Roy: Ok the services are to added too which is not there at present ?
+[4:24:57 PM] kiwibuydirect: Yes correct, you still have to add all the Filters which one is Services
+[4:25:01 PM] Avishek Roy: ok
+[4:27:18 PM] kiwibuydirect: at the top of Categories have the option to search "All Escorts" also have this option under Services search "All Services"
+[4:28:05 PM] kiwibuydirect: Sorry I mean under Services have the option to search "All Escorts"
+[4:28:37 PM] kiwibuydirect: is that all good?
+[4:30:20 PM] Avishek Roy: Yes that is Ok Dean.
+[4:32:15 PM] kiwibuydirect: ok good.......I will carry on.
+[4:33:04 PM] kiwibuydirect: 6. All photos loaded onto the web site of escorts whether they work privately or for an Agency/Club/Massage/Parlour/Stripper must be verified by us before they are loaded onto their profile, this is where the verification process comes into play. It is really important that the Escort in the photo is actually the Escort and not some fake photo off the net. This is why the word VERIFIED is on each Escort profile so that the client can see that the photo has been verified by us and these photos are actually of the escort in question.
+[4:35:39 PM] Avishek Roy: So the flow will be an Escorts uploads one or more photos those photos of escort wil be listed in the Admin
+[4:36:09 PM] Avishek Roy: now Admin verifies those photos will be visible in the site.
+[4:36:17 PM] kiwibuydirect: To become verified an Escort must send us a photo taken on her phone with a NZ newspaper showing the date, this is just one example of verifying who an escort is.
+[4:36:29 PM] kiwibuydirect: correct
+[4:39:05 PM] Avishek Roy: any sort of photo escorts uploads in the site Admin will approve then only will be visible on the site
+[4:40:00 PM] kiwibuydirect: When an escort clicks on Add Photos she will be told that the photos have to be verified before they are loaded, she will be given intructions on how to verify, I will send you the text in the next day or so that you can  place here
+[4:40:18 PM] kiwibuydirect: correct
+[4:41:54 PM] kiwibuydirect: We also want to make sure the photos being loaded are of an undesirable nature, there are some idiots out there that will load stupid photos and videos and we can not risk anything being loaded that is not sensored by us first.
+[4:42:37 PM] kiwibuydirect: I meant to say.......are not of an undesirable nature.
+[4:42:41 PM] Avishek Roy: Yes
+[4:44:37 PM] kiwibuydirect: We have sensorship in NZ and plus we also need to make sure that any photo loaded is of a reasonable quality of the escort, if any photos is to amateur and simply bad we will not load it but we will offer the escort a discounted photo session.
+[4:45:26 PM] Avishek Roy: only Admin will decide right
+[4:45:29 PM] kiwibuydirect: there will be some fine tuning to do on a few things but am sure th
+[4:45:51 PM] kiwibuydirect: .....sure these will be just that......fine tuning.\
+[4:45:55 PM] Avishek Roy: what we will do Dean ....
+[4:46:07 PM] Avishek Roy: we will add an Option in Admin
+[4:46:21 PM] kiwibuydirect: Yes only Admin will decide.
+[4:46:31 PM] kiwibuydirect: ok good
+[4:47:12 PM] Avishek Roy: the Escorts photos ... there all the individual photos of the escorts will be listed .. there Admin will have option to Approve / Reject if Admin Approves then only those photos will be listed.
+[4:47:24 PM] kiwibuydirect: correct
+[4:47:41 PM] Avishek Roy: in the site otherwise of Admin rejects them then those photos will not be shown Ok?
+[4:48:03 PM] kiwibuydirect: Also have the same policy when Agencies, Clubs, Massage Parlours, Strippers load photos
+[4:48:06 PM] Avishek Roy: Ok
+[4:48:17 PM] kiwibuydirect: correct
+[4:49:16 PM] kiwibuydirect: ok can we carry on.....
+[4:49:23 PM] Avishek Roy: yes.
+[4:50:25 PM] kiwibuydirect: 7. The Directory Shop will simply be that, this should be a relatively very straight forward process to load our Web Site Shop, our shop must have full Admin access to add, change, delete products and offer all the usual options, e.g. details, pricing, shipping etc plus all other features most shop CMS’s come with.
+[4:51:17 PM] kiwibuydirect: We have covered this briefly but listed again, any questions about The Directory shop?
+[4:51:46 PM] Avishek Roy: Dean I've sent you the update over the shop it is working exactly as you have stated.
+[4:52:05 PM] kiwibuydirect: ok good thanks.....I will carry on.....
+[4:52:26 PM] kiwibuydirect: 8. Please Note: The Escort shops will Not Offer any product for sale, the only things escorts can offer for sale at this stage we will be: 
+Private Gallery Photos
+Private Video 
+Private Web Cam Sessions (coming soon)
+[4:52:50 PM] kiwibuydirect: We have also covered this but loaded it again, any questions?
+[4:53:50 PM] Avishek Roy: no that we've discussed now
+[4:54:04 PM] kiwibuydirect: ok good.......will carry on
+[4:54:14 PM] kiwibuydirect: 9. The Escort Manage Booking feature is looking good however it should be a 24 hour selection, currently it is set so clients can only book from 6.am to 22.00 which is 10.pm, this is a typical example of using common sense, I am unsure as to why you would only have this time period available for selection, please change the Manage Booking so it starts from 12.am and goes to 11.pm, DO NOT use 24 hour format and use normal am – pm time format.
+[4:55:34 PM] kiwibuydirect: Escorts work at all different times around the clock so it is important to have the Manage Booking option as I have outlined above.
+[4:56:14 PM] Avishek Roy: Ok Dean we can change that.
+[4:56:24 PM] kiwibuydirect: ok good.....next
+[4:56:26 PM] kiwibuydirect: 10. My Follower on the Escort profile should be My Followers, please add an s. I am not a hundred percent sure I will even have this Feature available so please leave this for now and complete other features first.
+[4:57:12 PM] Avishek Roy: Ok then we'll leave this for the time being.
+[4:57:40 PM] Avishek Roy: actually this is showing the escort followers list
+[4:57:57 PM] kiwibuydirect: ok good.....next
+[4:58:35 PM] kiwibuydirect: 11. The web site template should I think be mostly a purple colour, can you please change this so I can see which is better, all the buttons are currently positioned on black colour and it looks to dark.
+[5:00:03 PM] Avishek Roy: Dean I do think this is designing issue we can take care of it once we've finished the fucntionlity part designer can make sure before it go lives Ok Dean ?
+[5:00:12 PM] kiwibuydirect: The background is already black so I think have all the Home - Escort buttons etc should be sitting on a purple colour
+[5:01:06 PM] kiwibuydirect: Yes this is just design aspect and yes finishing functionality is most important to focus on for now
+[5:01:11 PM] kiwibuydirect: ok next.....
+[5:01:39 PM] kiwibuydirect: 12. Note: The only Language selection for this web site is English only.
+13. Take note of the new drop down menu for Location, I sent Deepesh details and a photo of what is a better and cleaner looking way to select City/Region and Town/Suburb
+14. There is no need to list all countries to view, only have New Zealand listed at this stage, also only have New Zealand listed as the only country to select when Escorts, Agencies, Clubs, Users/Members etc are registering for new membership.
+[5:02:15 PM] kiwibuydirect: 15. I am hoping that you will also have the Tablet and Mobile phone formats available soon as well, of course firstly the completion of the web site build is most important.
+[5:02:28 PM] kiwibuydirect: any questions?
+[5:02:53 PM] Avishek Roy: number 14 is clear to me Dean. but regardin 12 and 13
+[5:03:39 PM] kiwibuydirect: Ok there is no need to offer any other language than English only
+[5:03:45 PM] Avishek Roy: Ok
+[5:05:04 PM] kiwibuydirect: 13. I sent Deepesh a photo showing what is a much better idea with regard to selecting City/Region etc and that is to have a drop down menu rather than listing every city down the page.
+[5:06:03 PM] kiwibuydirect: Having drop down menus is cleaner and uses less space on the page.
+[5:06:20 PM] kiwibuydirect: any questions?
+[5:07:51 PM] Avishek Roy: you mean to add the locations only that you have sent rather than what the whole list is showing over the site right ?
+[5:09:22 PM] Avishek Roy: Dean will you allow me 15 minutes please.
+[5:09:27 PM] Avishek Roy: I'm getting back to you.
+[5:09:53 PM] kiwibuydirect: yes correct, ok lets have a 15 minute break.
+[5:10:12 PM] kiwibuydirect: almost finished.......
+[5:10:46 PM] kiwibuydirect: these are the last 2 notes........
+[5:10:52 PM] kiwibuydirect: 16. This web site needs to go live by the 1st of December so it is vitally important that you complete 99% of the site by then. I am unsure as to why you are building and testing my web site on USA based servers when I paid for my own virtual server 3 months ago, I also sent Deepesh my server details at this time, please load the site onto my server ASAP. I can also confirm that my server is Linux.
+17. Please take note of all the emails I have sent Deepesh over the last few weeks which included updates, word docs and photos outlining all the corrections and updates that are required.
+[5:11:19 PM] kiwibuydirect: back in 15
+[5:18:21 PM] Avishek Roy: Ok Dean we've already got the credentials we'll migrate it.
+[5:23:23 PM] kiwibuydirect: ok that is all the notes I have for now.......I jjust have a couple of photos to send you now.
+[5:23:48 PM] Avishek Roy: can you please send me over mail to Deepesh
+[5:24:33 PM] kiwibuydirect: To view this shared photo, go to: https://login.skype.com/login/sso?go=xmmfallback?pic=0-sa-d2-18a2afd56b5bb9b694cbd0c95fe2b9c2
+[5:25:06 PM] kiwibuydirect: To view this shared photo, go to: https://login.skype.com/login/sso?go=xmmfallback?pic=0-sa-d1-b300e408b6c2f5ac39943aa6e9dab4eb
+[5:25:35 PM] kiwibuydirect: To view this shared photo, go to: https://login.skype.com/login/sso?go=xmmfallback?pic=0-sa-d1-6c9b9dea45b424d2b15aadb64f4af981
+[5:25:49 PM] kiwibuydirect: To view this shared photo, go to: https://login.skype.com/login/sso?go=xmmfallback?pic=0-sa-d1-ab5565269632ad11c601029fc575ca26
+[5:26:41 PM] kiwibuydirect: To view this shared photo, go to: https://login.skype.com/login/sso?go=xmmfallback?pic=0-sa-d1-475f332a8c809798d45ddca11025ae9f
+[5:27:31 PM] kiwibuydirect: ok that's it for now, I will touch base again on Friday and see how things are progressing.
+[5:28:57 PM] kiwibuydirect: ok so you want me to send you the last e-mail I sent Deepesh, can Deepesh just forward this e-mail to you?
+[5:29:42 PM] kiwibuydirect: To view this shared photo, go to: https://login.skype.com/login/sso?go=xmmfallback?pic=0-sa-d1-3d1b72f52d8bfc126d9c87af9bf74af3
+[5:29:56 PM] Avishek Roy: Ok Dean we'll upload the site on Thursday and will check it Friday and will send you the update so that ypu can check from your end
+[5:30:15 PM] kiwibuydirect: My Web Server Details
+ 
+VPS Hostname:     thedirectory.nz 
+ 
+Hardware Node Name:    ak0oh-lvz-214
+  
+VPS ID:    212453  
+
+VPS IP address:    119.47.112.112
+ 
+You can login to plesk at:
+
+Thedirectory.nz: 8443
+
+Username: root
+Password: czE#afv8
+
+OR
+
+Username: admin
+Password czE#afv8
+ 
+The root access to your VPS as well is using the same password: czE#afv8
+[5:31:39 PM] kiwibuydirect: Ok please load onto my server by Friday so I know it is functioning and responding as it should.
+[5:31:49 PM] Avishek Roy: Ok Dean.
+[5:32:19 PM] kiwibuydirect: ok thanks, have a good rest of the day and I will talk with you at end of week.
+

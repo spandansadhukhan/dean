@@ -1,0 +1,11 @@
+.glightBox{ text-align: center; max-width: 700px; margin: 30px auto; }
+.glightBox a{ height: 120px; width: 120px; display: inline-block; border-radius: 4px; overflow: hidden; margin: 5px; box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75); }
+.glightBox a img{ width: 100%; overflow: hidden; }
+.glightBox h3 span{ color: #f91052; border-bottom: 2px solid #f91052; display: inline-block; margin-bottom: 30px; }
+.panu.navbar-default{ background: #f91052; }
+.panu.navbar-default .navbar-brand{	padding: 0 0 0 15px; }
+.panu.navbar-default .navbar-nav > li > a{ color:#fff; text-transform: uppercase; font-weight:700; }
+.carousel-fade .carousel-inner .item { transition-property: opacity; }
+.carousel-fade .carousel-inner .item, .active.left, .active.right {  opacity: 0; }
+.carousel-fade .carousel-inner .active, .next.left, .prev.right { opacity: 1; }
+.carousel-fade .carousel-inner .next, .prev, .active.left, .active.right { left: 0; transform: translate3d(0, 0, 0); }
