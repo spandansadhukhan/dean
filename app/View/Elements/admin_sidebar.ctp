@@ -197,6 +197,8 @@
                 <a href="#"><i class="fa fa-female sidebar-nav-icon"></i> Blogs</a>
                 <ul class="sub-menu-list">
                     <li class="">
+                        <a href="<?php echo $this->webroot.'admin/blogs/blogcategorylist';?>">Manage Blogs Category</a>
+                        
                        <a href="<?php echo $this->webroot.'admin/blogs/';?>">Manage Blogs</a>
                     </li>
                     

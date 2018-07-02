@@ -18,7 +18,7 @@ class BlogsController extends AppController
     public function beforeFilter()
     {
         parent::beforeFilter();
-        $this->Auth->allow("admin_activeblog","delete","edit","index",'admin_index', 'admin_add', 'admin_view', 'admin_edit', 'admin_delete', 'admin_features','admin_addblog');
+        $this->Auth->allow("admin_activeblog","delete","edit","index",'admin_index', 'admin_add', 'admin_view', 'admin_edit', 'admin_delete', 'admin_features','admin_addblog','admin_blogcategorylist');
     }
     
     /**
@@ -38,9 +38,11 @@ class BlogsController extends AppController
             "order" => "Blog.id desc"
         );
           $total_blog = $this->Blog->find('count');
+          $total_active_blog = $this->Blog->find('count',array('conditions' => array('Blog.admin_approve' => 1)));
+          $total_inactive_blog = $this->Blog->find('count',array('conditions' => array('Blog.admin_approve' => 0)));
         $this->set('blogs', $this->Paginator->paginate('Blog'));
         $this->set(compact('title_for_layout'));
-        $this->set(compact('total_blog'));
+        $this->set(compact('total_blog','total_active_blog','total_inactive_blog'));
     }
     
     
@@ -352,7 +354,78 @@ class BlogsController extends AppController
         
     }
     
-    
+    public function admin_blogcategorylist() {	
+        
+        
+                $this->loadModel("BlogCategory");
+		$title_for_layout = 'BlogCategory List';
+                
+                
+                if (($this->request->is('post') || $this->request->is('put')) && isset($this->data['Filter'])) {
+
+            $filter_url['controller'] = $this->request->params['controller'];
+            $filter_url['action'] = $this->request->params['action'];
+            $filter_url['page'] = 1;
+            foreach ($this->data['Filter'] as $name => $value) {
+                if ($value) {
+                    $filter_url[$name] = urlencode($value);
+                }
+            }
+            return $this->redirect($filter_url);
+        } else {
+
+
+            $limit = 20;
+            
+            $conditions[] = array();
+          
+            foreach ($this->params['named'] as $param_name => $value) {
+                
+                if (!in_array($param_name, array('page', 'sort', 'direction', 'limit'))) {
+                    if ($param_name == 'name') {
+                        $conditions['BlogCategory.name LIKE'] = urldecode('%' . $value) . '%';
+                    } else {
+                        if ($param_name != 'advace_search_type') {
+
+                            $conditions['BlogCategory.' . $param_name] = urldecode($value);
+                        }
+                    }
+
+                    $direction = isset($this->params['named']['direction']) ? $this->params['named']['direction'] : '';
+                    if ($direction == 'Old') {
+                        $order_by = "BlogCategory.id asc";
+                    } else if ($direction == 'New') {
+                        $order_by = "BlogCategory.id desc";
+                    } else if ($direction == 'Asc') {
+                        $order_by = "BlogCategory.id asc";
+                    } else if ($direction == 'New') {
+                        $order_by = "BlogCategory.id desc";
+                    } else {
+                        $order_by = "BlogCategory.id desc";
+                    }
+                    if (isset($direction) and ! empty($direction)) {
+                        $this->request->data['Filter']['direction'] = $direction;
+                    }
+
+                    $this->request->data['Filter'][$param_name] = urldecode($value);
+                }
+            }
+        }
+                
+                
+                
+                
+		$this->BlogCategory->recursive = 0;
+                $this->Paginator->settings=array(
+                'conditions' => ($conditions),
+                "order"=>"BlogCategory.id desc"    
+                );
+		$this->set('classcategories', $this->Paginator->paginate('BlogCategory'));
+                $total_category = $this->BlogCategory->find('count');
+                $total_active_category = $this->BlogCategory->find('count', array('conditions' => array('BlogCategory.status'=>1)));
+                $total_inactive_category = $this->BlogCategory->find('count', array('conditions' => array('BlogCategory.status'=>0)));
+		$this->set(compact('title_for_layout','total_category','total_active_category','total_inactive_category'));
+	}
     
     
 }

@@ -21,11 +21,11 @@ class UsersController extends AppController {
      */
     public $name = 'Users';
     public $components = array('Session', 'RequestHandler', 'Paginator');
-    var $uses = array('User', 'Country', 'City', 'SiteSetting','WebsiteTemplate','Membershipattrbute','EmailTemplate');
+    var $uses = array('User', 'Country', 'City', 'SiteSetting','WebsiteTemplate','Membershipattrbute','EmailTemplate','Blog');
 
     public function beforeFilter() {
         parent::beforeFilter();
-        $this->Auth->allow("location","register","ajax_searchtour",'ajax_searchonline','slider','login_new','membership_name','convert_json','captcha','ajax_search','admin_index', 'admin_login', 'admin_logout', 'admin_register', 'admin_forgot_password', 'admin_dashboard', 'login', 'autoLogin', 'site_logo', 'registerinfo', 'index', 'signup', 'frontUserLogin', 'logout', 'checkemail', 'getCityListOfCountry', 'getCityListOfState', 'checkusername', 'unfollow', 'onlineescorts', 'changepass', 'admin_userindex', 'admin_userdelete', 'admin_membership', 'admin_packageactive', 'admin_purchesedmembership', 'admin_addescort', 'admin_categoryadd', 'admin_categorylist', 'admin_addsubcategory', 'admin_editcat', 'admin_deletecat', 'admin_productadd', 'admin_productlist', 'admin_uploadimage', 'admin_uploadProduct', 'admin_imagedelete', 'admin_editproduct', 'admin_deleteproduct', 'purchased', 'escorttours', 'admin_listlanguage', 'admin_addlanguage', 'admin_editlanguage', 'admin_deletelanguage', 'admin_activelanguage', 'deletebooking', 'admin_activeetenecty', 'admin_deleteetenecity', 'admin_editetenecity', 'admin_listetenecity', 'admin_addetenecity', 'admin_addcategory', 'admin_listcategory', 'admin_editcategory', 'admin_deletecategory', 'admin_activecategory', 'admin_addnationality', 'admin_listnationality', 'admin_editnationality', 'admin_deletenationality', 'admin_activenationality', 'admin_addworkroomcat', 'admin_listworkroomcat', 'admin_editworkroomcat', 'admin_deleteworkroomcat', 'admin_activeworkroomcat','admin_orderlist','admin_deleteOrder','admin_detailOrder','admin_orderdetails','admin_approvephotos','admin_activephoto','success','admin_websitetemplates','admin_activetemplate','admin_memattributeadd','admin_memattributelist','admin_editmemattribute','admin_deletememattribute','admin_membership_feature','admin_addclub','admin_addagency','admin_addparlor','accountsettings','escortlist','massageparlours','stripperlist','admin_useractive','admin_agentactive','admin_editagency','admin_subadmin','admin_addsubadmin','admin_editsubadmin','admin_view','admin_subadminactive','admin_subadmindelete','admin_templateview','admin_activeescort','admin_addwebsitetemplate','admin_editwebsitetemplate','admin_edit','admin_changepwd','admin_verifyescortemail');
+        $this->Auth->allow("location","register","ajax_searchtour",'ajax_searchonline','slider','login_new','membership_name','convert_json','captcha','ajax_search','admin_index', 'admin_login', 'admin_logout', 'admin_register', 'admin_forgot_password', 'admin_dashboard', 'login', 'autoLogin', 'site_logo', 'registerinfo', 'index', 'signup', 'frontUserLogin', 'logout', 'checkemail', 'getCityListOfCountry', 'getCityListOfState', 'checkusername', 'unfollow', 'onlineescorts', 'changepass', 'admin_userindex', 'admin_userdelete', 'admin_membership', 'admin_packageactive', 'admin_purchesedmembership', 'admin_addescort', 'admin_categoryadd', 'admin_categorylist', 'admin_addsubcategory', 'admin_editcat', 'admin_deletecat', 'admin_productadd', 'admin_productlist', 'admin_uploadimage', 'admin_uploadProduct', 'admin_imagedelete', 'admin_editproduct', 'admin_deleteproduct', 'purchased', 'escorttours', 'admin_listlanguage', 'admin_addlanguage', 'admin_editlanguage', 'admin_deletelanguage', 'admin_activelanguage', 'deletebooking', 'admin_activeetenecty', 'admin_deleteetenecity', 'admin_editetenecity', 'admin_listetenecity', 'admin_addetenecity', 'admin_addcategory', 'admin_listcategory', 'admin_editcategory', 'admin_deletecategory', 'admin_activecategory', 'admin_addnationality', 'admin_listnationality', 'admin_editnationality', 'admin_deletenationality', 'admin_activenationality', 'admin_addworkroomcat', 'admin_listworkroomcat', 'admin_editworkroomcat', 'admin_deleteworkroomcat', 'admin_activeworkroomcat','admin_orderlist','admin_deleteOrder','admin_detailOrder','admin_orderdetails','admin_approvephotos','admin_activephoto','success','admin_websitetemplates','admin_activetemplate','admin_memattributeadd','admin_memattributelist','admin_editmemattribute','admin_deletememattribute','admin_membership_feature','admin_addclub','admin_addagency','admin_addparlor','accountsettings','escortlist','massageparlours','stripperlist','admin_useractive','admin_agentactive','admin_editagency','admin_subadmin','admin_addsubadmin','admin_editsubadmin','admin_view','admin_subadminactive','admin_subadmindelete','admin_templateview','admin_activeescort','admin_addwebsitetemplate','admin_editwebsitetemplate','admin_edit','admin_changepwd','admin_verifyescortemail','admin_activeblog');
     }
     
     public function register() {
@@ -5671,4 +5671,21 @@ public function admin_activeescort($id = null) {
         $this->redirect(array('controller'=>'escorts','action' => 'index'));
     }
 
+    
+    public function admin_activeblog($id = null) {
+
+        
+        $checkuser = $this->Blog->find('first', array('conditions' => array('Blog.id' => $id)));
+        if ($checkuser['Blog']['admin_approve'] == 1) {
+            $status = 0;
+        } elseif ($checkuser['Blog']['admin_approve'] == 0) {
+            $status = 1;
+        }
+
+        $this->Blog->updateAll(array('Blog.admin_approve' => "'$status'"), array('Blog.id' => $id));
+        $this->redirect(array('controller'=>'Blogs','action' => 'index'));
+    }
+    
+    
+    
 }
