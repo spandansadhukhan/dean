@@ -1879,8 +1879,12 @@ class EscortsController extends AppController {
        );
        $availabilities=array('1'=>'Yes','0'=>'No');
        //pr($allahppyhoursdata); exit;
+       
+        
+        $options1 = array('conditions' => array('User.user_type' => 'E','is_active' => 1));
+        $escort = $this->User->find('list', $options1);
 
-       $this->set(compact('allahppyhoursdata','days',"select_days","service_types","availabilities"));
+       $this->set(compact('allahppyhoursdata','days',"select_days","service_types","availabilities",'escort'));
         
     }
 
@@ -1922,8 +1926,9 @@ class EscortsController extends AppController {
        );
        $availabilities=array('1'=>'Yes','0'=>'No');
        //pr($allahppyhoursdata); exit;
-
-       $this->set(compact('allahppyhoursdata','days',"select_days","service_types","availabilities"));
+       $options1 = array('conditions' => array('User.user_type' => 'E','is_active' => 1));
+       $escort = $this->User->find('list', $options1);
+       $this->set(compact('allahppyhoursdata','days',"select_days","service_types","availabilities",'escort'));
         
     }
 
@@ -2817,7 +2822,11 @@ function postbanner()
             "order"=>"Blacklist.id desc"    
             );
             $users=$this->Paginator->paginate("Blacklist");
-            $this->set(compact("users"));
+            //pr($users);
+            $total_category = $this->Blacklist->find('count');
+            $total_active_category = $this->Blacklist->find('count', array('conditions' => array('Blacklist.status'=>1)));
+            $total_inactive_category = $this->Blacklist->find('count', array('conditions' => array('Blacklist.status'=>0)));
+            $this->set(compact("users","total_category","total_active_category","total_inactive_category"));
 
         }
         
@@ -2856,7 +2865,19 @@ function postbanner()
 }
 
         
+    public function admin_activeblacklist($id = null) {
 
+        $this->loadModel("Blacklist");
+        $checkuser = $this->Blacklist->find('first', array('conditions' => array('Blacklist.id' => $id)));
+        if ($checkuser['Blacklist']['status'] == 1) {
+            $status = 0;
+        } elseif ($checkuser['Blacklist']['status'] == 0) {
+            $status = 1;
+        }
+
+        $this->Blacklist->updateAll(array('Blacklist.status' => "'$status'"), array('Blacklist.id' => $id));
+        $this->redirect(array('action' => 'blacklist'));
+    }
 
 
   

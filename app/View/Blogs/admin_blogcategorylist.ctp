@@ -76,7 +76,7 @@ $sl_no=0;
 				</div>
 				</div>
 				<div class="btn-group btn-group-sm pull-right">
-					<a id="style-hover" class="btn btn-primary gap_up gap_up_down" title="" data-toggle="tooltip" href="<?php echo $this->webroot; ?>admin/classified_categories/add" data-original-title="Add New Category">Add New</a>
+					<a id="style-hover" class="btn btn-primary gap_up gap_up_down" title="" data-toggle="tooltip" href="<?php echo $this->webroot; ?>admin/blogs/add" data-original-title="Add New Category">Add New</a>
 				</div>
 		</div>
          <?php echo $this->Form->end();?>
@@ -239,9 +239,9 @@ function del(aa){
   
       if (a ==true)
       {
-        location.href="<?php echo $this->webroot?>admin/classified_categories/delete/"+aa;
+        location.href="<?php echo $this->webroot?>admin/blogs/deleteblogcat/"+aa;
       }else{
-          location.href="<?php echo $this->webroot?>admin/classified_categories";
+          location.href="<?php echo $this->webroot?>admin/blogs/blogcategorylist";
           }
 }
 
@@ -251,7 +251,7 @@ function active(aa) {
         var a = confirm("Are you sure, you want to inactive status?")
         if (a)
         {
-            location.href = "<?php echo $this->webroot?>admin/classified_categories/active/" + aa;
+            location.href = "<?php echo $this->webroot?>admin/blogs/activeblogcat/" + aa;
         }
     }
 
@@ -260,7 +260,7 @@ function active(aa) {
         var a = confirm("Are you sure, you want to active status?")
         if (a)
         {
-            location.href = "<?php echo $this->webroot?>admin/classified_categories/active/" + aa;
+            location.href = "<?php echo $this->webroot?>admin/blogs/activeblogcat/" + aa;
         }
     }
 
@@ -268,7 +268,7 @@ function edit(aa) {
 
        // var a = confirm("Are you sure, you want to edit?")
        
-            location.href = "<?php echo $this->webroot?>admin/classified_categories/edit/" + aa;
+            location.href = "<?php echo $this->webroot?>admin/blogs/edit/" + aa;
        
     }
   

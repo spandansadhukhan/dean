@@ -290,27 +290,32 @@ public $components = array('Paginator');
 		}
     }
     
-    function admin_deleteclassified($id)
+   
+    
+    
+
+
+	public function admin_deleteclassified($id = null) 
+{
+         
+         $userid = $this->Session->read('userid');
+		if(!isset($userid) && $userid==''){ $this->redirect('/admin'); }
+    $this->loadModel('Classified');
+    $this->Classified->id = $id;
+    
+    if (!$this->Classified->exists()) 
     {
-        $this->Classified->id = $id;
-		if (!$this->Classified->exists()) {
-			throw new NotFoundException(__('Invalid Classified'));
-		}
-		$this->request->onlyAllow('post', 'delete');
-		if ($this->Classified->delete()) {
-			$this->Session->setFlash(__('The classified has been deleted.'));
-                        $this->redirect(array("action"=>"index"));        
-
-		} else {
-			$this->Session->setFlash(__('The classified could not be deleted. Please, try again.'));
-                        $this->redirect(array("action"=>"index"));        
-		}
+        throw new NotFoundException(__('Invalid service'));
     }
-    
-    
-
-
-	
+    if ($this->Classified->delete($id)) 
+    {
+        $this->Session->setFlash('The Classified has been deleted', 'default', array('class' => 'success'));
+    } else 
+    {
+        $this->Session->setFlash(__('The Classified could not be deleted. Please, try again.'));
+    }
+    return $this->redirect(array('action' => 'index'));
+}
 	
 	
 

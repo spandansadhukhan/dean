@@ -18,7 +18,7 @@ class BlogsController extends AppController
     public function beforeFilter()
     {
         parent::beforeFilter();
-        $this->Auth->allow("admin_activeblog","delete","edit","index",'admin_index', 'admin_add', 'admin_view', 'admin_edit', 'admin_delete', 'admin_features','admin_addblog','admin_blogcategorylist');
+        $this->Auth->allow("admin_activeblog","delete","edit","index",'admin_index', 'admin_add', 'admin_view', 'admin_edit', 'admin_delete', 'admin_features','admin_addblog','admin_blogcategorylist','admin_activeblogcat','admin_deleteblogcat');
     }
     
     /**
@@ -210,7 +210,7 @@ class BlogsController extends AppController
         echo json_encode($blog["Blog"]);exit;
         
     }
-    public function admin_edit($id = null)
+   /* public function admin_edit($id = null)
     {
         //echo $id;exit;
         $this->loadModel('Blog');
@@ -256,7 +256,7 @@ class BlogsController extends AppController
             
             //print_r($this->request->data);
         }
-    }
+    }*/
     
     public function admin_delete($id = null)
     {
@@ -356,7 +356,8 @@ class BlogsController extends AppController
     
     public function admin_blogcategorylist() {	
         
-        
+        $userid = $this->Session->read('userid');
+		if(!isset($userid) && $userid==''){ $this->redirect('/admin'); }
                 $this->loadModel("BlogCategory");
 		$title_for_layout = 'BlogCategory List';
                 
@@ -427,5 +428,125 @@ class BlogsController extends AppController
 		$this->set(compact('title_for_layout','total_category','total_active_category','total_inactive_category'));
 	}
     
+        
+        
+        
+        public function admin_activeblogcat($id = null) {
+            
+            $userid = $this->Session->read('userid');
+		if(!isset($userid) && $userid==''){ $this->redirect('/admin'); }
+
+        $this->loadModel("BlogCategory");
+        $checkuser = $this->BlogCategory->find('first', array('conditions' => array('BlogCategory.id' => $id)));
+        if ($checkuser['BlogCategory']['status'] == 1) {
+            $status = 0;
+        } elseif ($checkuser['BlogCategory']['status'] == 0) {
+            $status = 1;
+        }
+
+        $this->BlogCategory->updateAll(array('BlogCategory.status' => "'$status'"), array('BlogCategory.id' => $id));
+        $this->redirect(array('action' => 'blogcategorylist'));
+    }
+        
+        
+     public function admin_deleteblogcat($id = null) 
+{
+         
+         $userid = $this->Session->read('userid');
+		if(!isset($userid) && $userid==''){ $this->redirect('/admin'); }
+    $this->loadModel('BlogCategory');
+    $this->BlogCategory->id = $id;
+    
+    if (!$this->BlogCategory->exists()) 
+    {
+        throw new NotFoundException(__('Invalid service'));
+    }
+    if ($this->BlogCategory->delete($id)) 
+    {
+        $this->Session->setFlash('The category has been deleted', 'default', array('class' => 'success'));
+    } else 
+    {
+        $this->Session->setFlash(__('The category could not be deleted. Please, try again.'));
+    }
+    return $this->redirect(array('action' => 'blogcategorylist'));
+} 
+
+
+        public function admin_add() {
+            
+            $userid = $this->Session->read('userid');
+		if(!isset($userid) && $userid==''){ $this->redirect('/admin'); }
+            
+	$this->loadModel('BlogCategory');
+   
+    if ($this->request->is('post')) { 
+    //echo "hello";exit;
+        $options = array('conditions' => array('BlogCategory.name'  => $this->request->data['BlogCategory']['name']));
+        
+        
+        $serviceexists = $this->BlogCategory->find('first', $options);
+        if(!$serviceexists)
+        {
+            //echo "hello";exit;
+         $this->request->data['BlogCategory']['name'];
+         $this->request->data['BlogCategory']['add_date']=date('Y-m-d H:i:s');
+         
+         $this->BlogCategory->create();
+         if ($this->BlogCategory->save($this->request->data)) 
+          {
+            $this->Session->setFlash('The category has been saved', 'default', array('class' => 'success'));
+            return $this->redirect(array('action' => 'blogcategorylist'));
+          } 
+          else 
+          {
+            $this->Session->setFlash(__('The category could not be saved. Please, try again.', 'default', array('class' => 'error')));
+          }
+         
+      }
+      else {
+        
+            $this->Session->setFlash(__('BlogCategory already exists. Please, try another.', 'default', array('class' => 'error')));
+        }  
+    }
+    
+}
+
+
+    public function admin_edit($id = null) {
+        
+        
+		$userid = $this->Session->read('userid');
+		if(!isset($userid) && $userid==''){ $this->redirect('/admin'); }
+	    $this->loadModel('BlogCategory');
+		if (!$this->BlogCategory->exists($id)) {
+			throw new NotFoundException(__('Invalid service'));
+		}
+		if ($this->request->is(array('post', 'put'))) {
+			
+			$options = array('conditions' => array('BlogCategory.name'  => $this->request->data['BlogCategory']['name'], 'BlogCategory.id <>'=>$id));
+			$name = $this->BlogCategory->find('first', $options);
+			if(!$name){
+				//echo "hello";exit;
+				if ($this->BlogCategory->save($this->request->data)) {
+					$this->Session->setFlash('The category has been saved', 'default', array('class' => 'success'));
+                                        return $this->redirect(array('action' => 'blogcategorylist'));
+				} else {
+					$this->Session->setFlash(__('The category could not be saved. Please, try again.', array('class' => 'error')));
+				}
+			} else {
+				$this->Session->setFlash(__('The category name already exists. Please, try again.', array('class' => 'error')));
+			}
+		} else {
+			//echo "hello";exit;
+			$options = array('conditions' => array('BlogCategory.' . $this->BlogCategory->primaryKey => $id));
+			$this->request->data = $this->BlogCategory->find('first', $options);
+			
+			//print_r($this->request->data);
+		}
+	}
+
+
+
+
     
 }
